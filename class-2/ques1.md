@@ -95,4 +95,3 @@ function createCounter(initialValue) {
    console.assert(counter.getCounter() === 4, "Test Case 5 Failed");
    ```
 
-These test cases should validate that your implementation of `createCounter` works as expected, correctly managing the counter's value through the methods provided.
