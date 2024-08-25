@@ -1,0 +1,6 @@
+5
+getCounter
+increaseCounter
+getCounter
+decreaseCounter
+getCounter

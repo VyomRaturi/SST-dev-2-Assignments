@@ -1,6 +1,8 @@
 ### Problem Description
 
-You need to create a function `createCounter` that takes a single integer as its parameter and returns an object with three specific methods: `getCounter`, `increaseCounter`, and `decreaseCounter`. 
+<!-- Link: https://www.scaler.com/hire/test/problem/167865/ -->
+
+You need to create a function `createCounter` that takes a single integer as its parameter and returns an object with three specific methods: `getCounter`, `increaseCounter`, and `decreaseCounter`.
 
 - The `getCounter` method should return the current value of the counter, which initially equals the integer passed to `createCounter`.
 - The `increaseCounter` method should increment the counter by 1.
@@ -21,6 +23,7 @@ The object returned by `createCounter` should only have these three methods and 
 1. **Define the Counter**: Inside `createCounter`, define a local variable `counter` to hold the initial value passed as a parameter.
 
 2. **Create Methods**: Define three functions inside `createCounter`:
+
    - `getCounter`: returns the current value of `counter`.
    - `increaseCounter`: increments the value of `counter` by 1.
    - `decreaseCounter`: decrements the value of `counter` by 1.
@@ -31,7 +34,7 @@ The object returned by `createCounter` should only have these three methods and 
 
 ```javascript
 function createCounter(initialValue) {
-    // Implement the solution here
+  // Implement the solution here
 }
 ```
 
@@ -39,49 +42,53 @@ function createCounter(initialValue) {
 
 ```javascript
 function createCounter(initialValue) {
-    let counter = initialValue;
+  let counter = initialValue;
 
-    function getCounter() {
-        return counter;
-    }
+  function getCounter() {
+    return counter;
+  }
 
-    function increaseCounter() {
-        counter += 1;
-    }
+  function increaseCounter() {
+    counter += 1;
+  }
 
-    function decreaseCounter() {
-        counter -= 1;
-    }
+  function decreaseCounter() {
+    counter -= 1;
+  }
 
-    return {
-        getCounter,
-        increaseCounter,
-        decreaseCounter
-    };
+  return {
+    getCounter,
+    increaseCounter,
+    decreaseCounter,
+  };
 }
 ```
 
 ### Test Cases
 
 1. **Initial Counter Value**
+
    ```javascript
    var counter = createCounter(4);
    console.assert(counter.getCounter() === 4, "Test Case 1 Failed");
    ```
 
 2. **Increment Counter**
+
    ```javascript
    counter.increaseCounter();
    console.assert(counter.getCounter() === 5, "Test Case 2 Failed");
    ```
 
 3. **Decrement Counter**
+
    ```javascript
    counter.decreaseCounter();
    console.assert(counter.getCounter() === 4, "Test Case 3 Failed");
    ```
 
 4. **Multiple Increments**
+
    ```javascript
    counter.increaseCounter();
    counter.increaseCounter();
@@ -94,4 +101,3 @@ function createCounter(initialValue) {
    counter.decreaseCounter();
    console.assert(counter.getCounter() === 4, "Test Case 5 Failed");
    ```
-
