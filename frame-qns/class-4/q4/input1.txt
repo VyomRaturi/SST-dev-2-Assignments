@@ -1,0 +1,5 @@
+   hello world   
+   JavaScript   
+trim me
+   spaced text   
+noSpaces

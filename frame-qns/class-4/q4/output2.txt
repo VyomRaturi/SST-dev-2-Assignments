@@ -1,0 +1,4 @@
+"leading spaces"
+"trailing spaces"
+"both sides"
+"no extra spaces"
